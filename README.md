@@ -28,29 +28,24 @@ This application can be used by any small to mid-sized stores to easily maintain
 
 ## How to download and run the software
 
-#### Minimum Requirements: JDK or JRE version 16.
+#### Minimum Requirements: JDK or JRE version 20.
 
-1. Download and unzip the ZIP folder: [InventoryManagement.zip](InventoryManagement.zip)
-2. Download the [SQL dump file](SQL/InventoryDB.sql)
-3. Import the SQL dump file using MySQL Workbench to locally create the sample schema and tables associated with this software.
-4. After the inventory schema has been locally created, you can go ahead and run the JAR file (InventoryManagement.jar) included in the zip folder.
-5. Default credentials for the connection to MySQL database is:
-    - Username: root
-    - Password: root
+1. Default credentials for the connection to MySQL database is:
+    - Username: PeterVillanueva
+    - Password: villanueva12345
   
     Incase your database uses a different username and password to connect, follow these steps:
-    1. Go to the `lib` folder in the zip file that you downloaded.
-    2. Open the XML source file `DBCredentials.xml`.
-    3. Simply change the values of the two `entry` tags with values `username` and `password` from "root" to whatever username and password you are using. (Ln 12 and 13)
+    1. Open the XML source file `DBCredentials.xml`.
+    2. Simply change the values of the two `entry` tags with values `username` and `password` from "root" to whatever username and password you are using. (Ln 12 and 13)
         ```xml
           <properties>
           <comment>Credentials for the database.</comment>
-            <entry key="username">root</entry>
-            <entry key="password">root</entry>
+            <entry key="username">PeterVillanueva</entry>
+            <entry key="password">villanueva12345</entry>
           </properties>
         ```
-6. Once these credentials match, the JAR file should execute without any issues provided that you have the minimum JRE.
-7. You can log into the application using Username: `root` and Password: `root`.
+3. Once these credentials match, the JAR file should execute without any issues provided that you have the minimum JRE.
+4. You can log into the application using Username: `PeterVillanueva` and Password: `villanueva12345`.
 
 ### Note:
 
@@ -146,8 +141,6 @@ The software code has been divided into four different packages:
   - Database: Contains the ConnectionFactory class that retrieves the database connection and verifies user credentials for the application.
   - User Interface (UI): Contains all the GUI classes making up the interface layer of the software.
 
-Click [here](src/com/inventory/) to skip directly to the source code.
+## Author
 
-## Work-in-Progress
-
-This project is a work in progress and more features are yet to be added with new technologies. 
+This project is made by Peter Villanueva in behalf of our CC 205 Final Project ✅
